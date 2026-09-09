@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collins Wasilwa | AI Data Operations Specialist</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              500: '#22c55e',
+              600: '#16a34a',
+              700: '#15803d',
+              900: '#14532d',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .glass {
+      background: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(10px);
+    }
+    .dark .glass {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300 font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+        <i class="fa-solid fa-microchip text-brand-500"></i>
+        <span>Collins Wasilwa</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hidden md:inline-block text-sm font-medium hover:text-brand-500 transition-colors">About</a>
+        <a href="#skills" class="hidden md:inline-block text-sm font-medium hover:text-brand-500 transition-colors">Skills</a>
+        <a href="#projects" class="hidden md:inline-block text-sm font-medium hover:text-brand-500 transition-colors">Case Studies</a>
+        <a href="#demo" class="hidden md:inline-block text-sm font-medium hover:text-brand-500 transition-colors">Interactive Demo</a>
+        <a href="#experience" class="hidden md:inline-block text-sm font-medium hover:text-brand-500 transition-colors">Experience</a>
+        
+        <button id="themeToggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-brand-500 transition-colors">
+          <i class="fa-solid fa-moon dark:hidden"></i>
+          <i class="fa-solid fa-sun hidden dark:inline"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div class="md:col-span-2 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-50 text-brand-700 dark:bg-brand-900/30 dark:text-brand-500 border border-brand-500/20">
+          <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+          Available for AI Operations & Annotation Roles
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+          AI Data Operations & Annotation Specialist
+        </h1>
+        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+          Versatile AI data professional with 5+ years of experience in computer vision labeling, Swahili NLP training, video annotation, and quality assurance. Bridging precise language modeling with hardware diagnostics.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="mailto:wasilwacollins@gmail.com" class="px-5 py-2.5 rounded-lg bg-brand-600 text-white font-medium hover:bg-brand-700 transition-all shadow-md shadow-brand-500/20 flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i> Contact Me
+          </a>
+          <a href="#demo" class="px-5 py-2.5 rounded-lg bg-slate-200 dark:bg-slate-800 font-medium hover:bg-slate-300 dark:hover:bg-slate-700 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-layer-group"></i> Try Interactive Demo
+          </a>
+        </div>
+      </div>
+      
+      <!-- Contact Card -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 shadow-xl space-y-4">
+        <h3 class="text-lg font-bold border-b border-slate-100 dark:border-slate-700 pb-3">Quick Contact</h3>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-location-dot text-brand-500 w-5"></i>
+            <span>Nairobi / Kenya</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-phone text-brand-500 w-5"></i>
+            <span>+254 703 448 847</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-envelope text-brand-500 w-5"></i>
+            <span class="truncate">wasilwacollins@gmail.com</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fa-solid fa-graduation-cap text-brand-500 w-5"></i>
+            <span>BSc Electronics (SEKU)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Core Competencies / Skills -->
+  <section id="skills" class="bg-slate-100/70 dark:bg-slate-800/40 py-16 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div>
+        <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Core Competencies</h2>
+        <p class="text-sm text-slate-500 dark:text-slate-400">Technical toolkit honed across 5+ years in data operations</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-900/30 text-brand-600 flex items-center justify-center font-bold text-lg mb-3">
+            <i class="fa-solid fa-vector-square"></i>
+          </div>
+          <h3 class="font-bold text-base">Computer Vision</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">2D/3D Bounding boxes, Polygon segmentation, keypoint tracking, video & spatial labeling.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-900/30 text-brand-600 flex items-center justify-center font-bold text-lg mb-3">
+            <i class="fa-solid fa-language"></i>
+          </div>
+          <h3 class="font-bold text-base">NLP & Swahili AI</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Swahili LLM tuning, sentiment analysis, audio transcription, text categorization, and content audit.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-900/30 text-brand-600 flex items-center justify-center font-bold text-lg mb-3">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+          <h3 class="font-bold text-base">QA & Edge-Case Analysis</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Data validation, conflict resolution, guidelines verification, and annotation accuracy audits.</p>
+        </div>
+
+        <div class="p-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-sm space-y-2">
+          <div class="w-10 h-10 rounded-lg bg-brand-50 dark:bg-brand-900/30 text-brand-600 flex items-center justify-center font-bold text-lg mb-3">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3 class="font-bold text-base">Hardware & Tech</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400">Microcontrollers, circuit design, system diagnostics, and hardware/software troubleshooting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Studies -->
+  <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Featured Projects & Case Studies</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400">Real-world AI dataset projects and operational impacts</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Case 1 -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-md flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="px-2.5 py-1 rounded text-xs font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">NLP & Audio</span>
+          <h3 class="text-lg font-bold">Swahili LLM & Speech AI Pipeline</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">iMerit (Dec 2025 – Apr 2026)</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300">
+            Reviewed and validated high-volume Swahili linguistic text and speech data to support model fine-tuning and natural language processing.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-700/60">
+          <p class="text-xs font-semibold text-brand-600 dark:text-brand-500"><i class="fa-solid fa-check-double mr-1"></i> Reduced error rate & dialectal ambiguity</p>
+        </div>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-md flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="px-2.5 py-1 rounded text-xs font-bold bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300">Computer Vision</span>
+          <h3 class="text-lg font-bold">Multi-Modal Vision & Video Labeling</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Fuzu Services & Remotasks</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300">
+            Executed 2D/3D bounding boxes, polygon segmentation, and frame-by-frame video tracking across spatial datasets for AI training models.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-700/60">
+          <p class="text-xs font-semibold text-brand-600 dark:text-brand-500"><i class="fa-solid fa-check-double mr-1"></i> Maintained high throughput & target precision</p>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-md flex flex-col justify-between space-y-4">
+        <div class="space-y-3">
+          <span class="px-2.5 py-1 rounded text-xs font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">Operations & QA</span>
+          <h3 class="text-lg font-bold">Audio Transcription & QA Ops</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Scribie & Sama Kenya Ltd</p>
+          <p class="text-sm text-slate-600 dark:text-slate-300">
+            Managed annotation quality assurance checks, standardized error reporting, and transcribed complex corporate audio datasets under tight deadlines.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-100 dark:border-slate-700/60">
+          <p class="text-xs font-semibold text-brand-600 dark:text-brand-500"><i class="fa-solid fa-check-double mr-1"></i> Improved workflow efficiency & data quality</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Annotation Simulator -->
+  <section id="demo" class="bg-slate-100/70 dark:bg-slate-800/40 py-16 border-y border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div>
+          <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Interactive Bounding Box Demo</h2>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Simulating Bounding Box Labeling & QA Verification</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <button id="toggleLabels" class="px-3 py-1.5 rounded-md bg-brand-600 text-white text-xs font-semibold hover:bg-brand-700 transition-colors">
+            Toggle Bounding Boxes
+          </button>
+          <span id="qaStatus" class="px-3 py-1.5 rounded-md bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 text-xs font-semibold">
+            Status: QA Verified
+          </span>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700/60 shadow-lg space-y-4">
+        <!-- Visual Simulation Canvas/Container -->
+        <div class="relative w-full h-64 md:h-80 bg-slate-900 rounded-xl overflow-hidden flex items-center justify-center border border-slate-700">
+          <!-- Placeholder background pattern mimicking video/image -->
+          <div class="absolute inset-0 bg-gradient-to-tr from-slate-800 to-slate-900 opacity-90"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-slate-600 text-xs uppercase tracking-widest pointer-events-none">
+            [ Mock Autonomous Driving Camera Feed Frame #1042 ]
+          </div>
+
+          <!-- Bounding Box 1: Vehicle -->
+          <div id="bbox1" class="absolute left-[15%] top-[25%] w-[35%] h-[50%] border-2 border-brand-500 bg-brand-500/10 rounded flex flex-col justify-between p-1 text-xs font-mono text-brand-400 transition-all duration-300">
+            <span class="bg-brand-600 text-white px-1.5 py-0.5 rounded text-[10px] w-max font-sans">Vehicle (98.4%)</span>
+            <span class="text-[10px] self-end bg-slate-900/80 px-1 rounded">id: obj_01</span>
+          </div>
+
+          <!-- Bounding Box 2: Pedestrian -->
+          <div id="bbox2" class="absolute left-[60%] top-[35%] w-[15%] h-[40%] border-2 border-amber-500 bg-amber-500/10 rounded flex flex-col justify-between p-1 text-xs font-mono text-amber-400 transition-all duration-300">
+            <span class="bg-amber-600 text-white px-1.5 py-0.5 rounded text-[10px] w-max font-sans">Pedestrian (94.1%)</span>
+            <span class="text-[10px] self-end bg-slate-900/80 px-1 rounded">id: obj_02</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono bg-slate-50 dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+          <div>
+            <span class="text-slate-400">Bounding Box Metadata Output (JSON):</span>
+            <pre class="text-emerald-600 dark:text-emerald-400 mt-1 overflow-x-auto">
+[
+  { "label": "Vehicle", "confidence": 0.984, "coords": [15, 25, 35, 50] },
+  { "label": "Pedestrian", "confidence": 0.941, "coords": [60, 35, 15, 40] }
+]</pre>
+          </div>
+          <div class="space-y-1 font-sans text-slate-600 dark:text-slate-300">
+            <span class="font-bold text-slate-900 dark:text-white">Annotation Checklist Passed:</span>
+            <ul class="list-disc list-inside space-y-1 text-xs pt-1">
+              <li>Tight spatial boundaries (zero margin clipping)</li>
+              <li>No occlusion misclassification</li>
+              <li>Validated attributes and entity tags</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Timeline -->
+  <section id="experience" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8">
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900 dark:text-white">Professional Experience</h2>
+      <p class="text-sm text-slate-500 dark:text-slate-400">Detailed employment history and key duties</p>
+    </div>
+
+    <div class="relative border-l-2 border-slate-200 dark:border-slate-700 ml-4 space-y-8">
+      <!-- Role 1 -->
+      <div class="relative pl-6">
+        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-brand-500 ring-4 ring-white dark:ring-slate-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+          <h3 class="text-lg font-bold">Swahili AI Trainer</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">Dec 2025 – Apr 2026</span>
+        </div>
+        <p class="text-sm font-medium text-brand-600 dark:text-brand-500">iMerit</p>
+        <ul class="mt-2 text-sm text-slate-600 dark:text-slate-300 list-disc list-inside space-y-1">
+          <li>Supported AI training projects involving Swahili-language data and linguistic content.</li>
+          <li>Reviewed, annotated, and validated language data to support machine-learning model development.</li>
+          <li>Evaluated text/audio content for quality, relevance, and adherence to project guidelines.</li>
+        </ul>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="relative pl-6">
+        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+          <h3 class="text-lg font-bold">Data Labeler</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">May 2025 – Present</span>
+        </div>
+        <p class="text-sm font-medium text-brand-600 dark:text-brand-500">Fuzu Services Mauritius (KE Branch)</p>
+        <ul class="mt-2 text-sm text-slate-600 dark:text-slate-300 list-disc list-inside space-y-1">
+          <li>Annotate image, text, and audio datasets for AI model training.</li>
+          <li>Perform quality checks and identify edge cases to improve labeling guidelines.</li>
+        </ul>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="relative pl-6">
+        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+          <h3 class="text-lg font-bold">Freelance Data Annotation Specialist</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">Jul 2019 – Present</span>
+        </div>
+        <p class="text-sm font-medium text-brand-600 dark:text-brand-500">Toloka, Clickworker & Remotasks</p>
+        <ul class="mt-2 text-sm text-slate-600 dark:text-slate-300 list-disc list-inside space-y-1">
+          <li>Delivered high-quality 2D/3D image and video annotation under strict accuracy standards.</li>
+          <li>Conducted sentiment analysis, transcriptions, and text categorization.</li>
+        </ul>
+      </div>
+
+      <!-- Role 4 -->
+      <div class="relative pl-6">
+        <span class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-600 ring-4 ring-white dark:ring-slate-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between">
+          <h3 class="text-lg font-bold">Technician</h3>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">2022 – 2024</span>
+        </div>
+        <p class="text-sm font-medium text-brand-600 dark:text-brand-500">Lunartech Electronics</p>
+        <ul class="mt-2 text-sm text-slate-600 dark:text-slate-300 list-disc list-inside space-y-1">
+          <li>Installed and maintained CCTV/electrical systems; designed microcontroller-based circuits.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-8 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 text-center text-xs text-slate-500 dark:text-slate-400 space-y-2">
+      <p>© 2026 Collins Wasilwa. All rights reserved.</p>
+      <p>AI Data Operations Specialist • Wasilwacollins@gmail.com • +254 703 448 847</p>
+    </div>
+  </footer>
+
+  <!-- Script for Theme Toggle & Interactive Demo -->
+  <script>
+    // Dark mode toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    // Demo toggle
+    const toggleBtn = document.getElementById('toggleLabels');
+    const bbox1 = document.getElementById('bbox1');
+    const bbox2 = document.getElementById('bbox2');
+    let visible = true;
+
+    toggleBtn.addEventListener('click', () => {
+      visible = !visible;
+      if (visible) {
+        bbox1.style.opacity = '1';
+        bbox2.style.opacity = '1';
+      } else {
+        bbox1.style.opacity = '0';
+        bbox2.style.opacity = '0';
+      }
+    });
+  </script>
+</body>
+</html>
